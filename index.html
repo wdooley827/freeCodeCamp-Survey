@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to   take this survey!</p>
+    </header>
+    <form method="post" id="survey-form"">
+      
+      <fieldset>
+        <label id="name-label" for="name">Name: <input
+        type="text" 
+        id="name"
+        name="name"
+        placeholder="Enter your name"
+        required
+        />
+        <label id="email-label" for="email">Email: <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        />
+        <label id="number-label" for="number">Age: <input
+        type="number"
+        id="number"
+        name="age"
+        min="18"
+        max="120"
+        placeholder="Age"
+        required
+        />
+      </fieldset>
+     
+      <fieldset>
+        <p>How many hours do you practice coding a day?
+        <select id="dropdown" for="hours" required>
+          <option value ="">(select one)</option>
+          <option value="1">Less than 1 hour</option>
+          <option value="2">1-2 hours</option>
+          <option value="3">2-4 hours</option>
+          <option value="4">4+ hours</option>
+        </select>
+      </fieldset>
+     
+      <fieldset>
+        <p>What is your favorite programming language so far?</p>
+        <label for="python">
+          <input 
+          type="radio"
+          id="python"
+          name="favorite"
+          value="python"
+          class="input-radio"
+          checked
+          />
+          Python
+        </label>
+        <label for="javascript">
+          <input
+          type="radio"
+          id="javascript"
+          name="favorite"
+          value="javascript"
+          class="input-radio"
+          />
+          JavaScript
+        </label>
+        <label for="c++">
+        <input
+        type="radio"
+        id="c++"
+        name="favorite"
+        value="c++"
+        class="input-radio"
+        />
+        C++
+        <label>
+      </fieldset>
+
+      <fieldset>
+        <p>What are your favorite coding resources? (Check all that apply)</p>
+        <label>
+          <input
+          type="checkbox"
+          id="freeCodeCamp"
+          name="resources"
+          value="freeCodeCamp"
+          class="input-checkbox"
+          />
+          freeCodeCamp
+        </label>
+        <label>
+          <input
+          type="checkbox"
+          id="KhanAcademy"
+          name="resources"
+          value="KhanAcademy"
+          class="input-checkbox"
+          />
+          Khan Academy
+        </label>
+        <label>
+          <input
+          type="checkbox"
+          id="CodeAcademy"
+          name="resources"
+          value="CodeAcademy"
+          class="input-checkbox"
+          />
+          Code Academy
+        </label>
+        <label>
+          <input
+          type="checkbox"
+          id="stackOverflow"
+          name="resources"
+          value="stackOverflow"
+          class="input-checkbox"
+          />
+          Stack Overflow
+        </label>
+        <label>
+          <input
+          type="checkbox"
+          id="gitHub"
+          name="resources"
+          value="gitHub"
+          class="input-checkbox"
+          />
+          GitHub
+        <label>
+        </fieldset>
+
+        <fieldset>
+          <p>Add any other resources we missed:</p>
+          <textarea
+            id="userInput"
+            class="input-text"
+            name="userInput"
+            placeholder="..."
+            >
+          </textarea>
+          </fieldset>
+        
+        <button id="submit" type="submit"/>Submit</button>
+    </form>
+  </body>
